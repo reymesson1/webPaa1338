@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer{
+  background-color: #512DA8;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.jumbotron {
+  /* background-image: url(spice_spoons_detail.jpg); */
+  background-position: 0% 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin:0px auto;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.whiteText {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+address{
+  font-size:80%;
+  margin:0px;
+  color: black;
+}
+
+.cardImage {
+  display: block;
+  max-width: 100%;
+  height: 450px;
+}
+
+.leaderImage {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.navbar-dark {
+  background-color: #512DA8;
+}
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #787878;
+  color: #787878;
+}
+
+.btn:hover {
+  background-color: #676464; /* Green */
+  color: white;
+}
+
+.page-enter {
+  opacity: 0.01;
+  transform: translatex(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
 }
