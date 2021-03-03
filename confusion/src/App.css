@@ -16,7 +16,7 @@
   padding: 20px 0px 20px 0px;
 }
 .jumbotron {
-  background-image: url(spice_spoons_detail.jpg);
+  /* background-image: url(spice_spoons_detail.jpg); */
   background-position: 0% 40%;
   background-size: cover;
   background-repeat: no-repeat;
