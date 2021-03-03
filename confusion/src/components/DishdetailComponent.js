@@ -1,4 +1,5 @@
 import React from 'react';
+import CommentForm from './CommentFormComponent';
 import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +20,7 @@ function RenderDish ({dish}) {
         );
 }
 
-function RenderComments ({comments}) {
+function RenderComments ({comments, addComment, dishId}) {
     if (comments != null) {
         const dishComments = comments.map((comment) => {
             return (
@@ -29,7 +30,12 @@ function RenderComments ({comments}) {
                 </ul>
             );
         });
-        return (dishComments);
+        return (
+            <div>
+                {dishComments}
+                <CommentForm dishId={dishId} addComment={addComment}/>
+            </div>
+        );
     }
     else {
         return (
@@ -58,7 +64,9 @@ const DishDetail = (props) => {
                 </div>
                 <div className="col-12 col-md-5 m-1">
                     <h4>Reviews</h4>
-                    <RenderComments comments={props.comments} />
+                    <RenderComments comments={props.comments} 
+                        addComment={props.addComment}
+                        dishId={props.dish.id}/>
                 </div>
             </div>
         </div>
