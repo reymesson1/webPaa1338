@@ -16,7 +16,7 @@
   padding: 20px 0px 20px 0px;
 }
 .jumbotron {
-  /* background-image: url(spice_spoons_detail.jpg); */
+  background-image: url(spice_spoons_detail.jpg);
   background-position: 0% 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,4 +49,15 @@ address{
 
 .navbar-dark {
   background-color: #512DA8;
+}
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #787878;
+  color: #787878;
+}
+
+.btn:hover {
+  background-color: #676464; /* Green */
+  color: white;
 }
