@@ -65,7 +65,8 @@ class Main extends Component {
                     commentsErrMess={this.props.comments.errMess}
                     addComment={this.props.addComment}
                 />
-            );
+            
+                );
         };
 
         return (
